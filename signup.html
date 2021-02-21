@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGNUP | Why Waste!</title>
+	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	 <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-messaging.js"></script>
+
+</head>
+
+<body>
+	<div class="main-block">
+        <h1> REGISTER</h1>
+        <form id="add-ngo">
+          <hr>
+          <hr>
+          <label id="icon" for="name"><i class="fa fa-envelope"></i></label>
+          <input type="text" name="name" placeholder="NGO Name" required/>
+          <label id="icon" for="address"><i class="fa fa-user"></i></label>
+          <input type="text" name="address" placeholder="Address" required/>
+          <label id="icon" for="city"><i class="fa fa-unlock-alt"></i></label>
+          <input type="text" name="city" placeholder="City Name" required/>
+          <label id="icon" for="phone"><i class="fa fa-unlock-alt"></i></label>
+          <input type="text" name="phone" placeholder="Phone Number" required/>
+          <label id="icon" for="email"><i class="fa fa-envelope"></i></label>
+          <input type="text" name="email" placeholder="E-mail ID" required/>
+          <hr>
+          <div class="btn-block">
+            <button type="submit" href="/">Submit</button>
+          </div>
+        </form>
+      </div>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyADAtJOq3u6AeOls4DgWPHvNa2FUD0v-V4",
+            authDomain: "why-waste-cd23e.firebaseapp.com",
+            projectId: "why-waste-cd23e",
+            storageBucket: "why-waste-cd23e.appspot.com",
+            messagingSenderId: "197605221555",
+            appId: "1:197605221555:web:123cfc69d3ea8f6ec2bcc6",
+            measurementId: "G-LGSCL7VXG3"
+        };
+        
+        firebase.initializeApp(firebaseConfig);
+        
+        const db=firebase.firestore();
+        db.settings({timestampsInSnapshots: true});
+        firebase.analytics();
+
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

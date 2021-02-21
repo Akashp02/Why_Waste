@@ -1,0 +1,31 @@
+.navbar-text{
+	cursor: pointer;
+}
+nav{
+	background-color: rgb(2,0,36);
+}
+a{
+	padding: 10px;
+}
+.loginbtn:hover a{
+	background-color: purple;
+	border: 1px solid purple;
+	border-radius: 10px;
+	
+
+}
+.logo{
+	position: relative;
+	top: 50px;
+}
+h1{
+	font-family: helvetica;
+	color: white;
+	font-size: 35px;
+	padding-top: 45px;
+}
+h3{
+	font-family: helvetica;
+	color: white;
+	font-size: 20px;
+}
