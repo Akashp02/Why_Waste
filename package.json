@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/A-Neeraj/Why_Waste#readme",
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.6.0",
+    "netlify": "^6.1.9"
   }
 }
